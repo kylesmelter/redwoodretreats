@@ -1,0 +1,250 @@
+* {
+  padding: o;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", "sans-serif";
+}
+
+header {
+  background: #386641;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8%;
+  margin: 0 4%;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  background-image: url("redwood-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.hero-text {
+  color: white;
+  font-style: bold;
+  font-size: 2rem;
+  padding-top: 30%;
+}
+
+.book {
+  padding: 1rem 2rem;
+  background: #386641;
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+
+.book:hover {
+  background: white;
+  color: #386641;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #386641;
+  text-shadow: 0px 4px 3px rgba(56, 102, 65, 0.5);
+  margin: 5% 0 0 0;
+}
+
+.testimonial {
+  font-size: 2rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.testimonial-headshot {
+  width: 50%;
+  border-radius: 9%;
+}
+
+.testimonial-text {
+  max-width: 50%;
+  margin: 5% 0;
+  line-height: 1.6;
+  color: #8c8c8c;
+  text-shadow: 0px 4px 3px rgba(140, 140, 140, 0.5);
+}
+
+.testimonial-two {
+  font-size: 2rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background: #386641;
+  color: white;
+  margin-top: 3%;
+}
+
+.footer-name {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5%;
+  padding-top: 5%;
+}
+
+.tours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture {
+  background-image: url("boy-scout.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 50%;
+  border-radius: 9%;
+  margin: 5% 0;
+}
+
+.fern-canyon {
+  background-image: url("fern-canyon.jpg");
+}
+
+.titans {
+  background-image: url("titans.jpg");
+}
+
+.tour-link {
+  display: inline-block;
+  color: white;
+  background: #386641;
+  padding: 1rem 2rem;
+  border-radius: 9%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.fern-link {
+  position: relative;
+  top: 45%;
+  left: 27%;
+}
+
+.titan-link {
+  position: relative;
+  top: 45%;
+  left: 20%;
+}
+
+.scout-link {
+  position: relative;
+  top: 45%;
+  left: 20%;
+}
+
+.tour-link:hover {
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  margin: 2% 0;
+}
+
+.icons {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  .testimonial {
+    flex-direction: row;
+    gap: 5%;
+    margin: 5% 5%;
+  }
+
+  .testimonial-headshot {
+    width: 35%;
+  }
+
+  .testimonial-two {
+    flex-direction: row-reverse;
+    gap: 5%;
+    margin: 5% 5%;
+  }
+
+  .tours-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 5%;
+  }
+
+  .picture {
+    width: 30%;
+  }
+
+  .hero-text {
+    font-size: 4rem;
+    padding-top: 15%;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-name {
+    text-align: left;
+    padding-left: 2%;
+  }
+
+  .footer-text {
+    padding: 0 2%;
+  }
+}
